@@ -1,57 +1,78 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <p>Preventing satellite jamming using OFDM</p> 
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Preventing Satellite Jamming using OFDM</title> 
+    <link rel="stylesheet" href="./afterHawks_files/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./afterHawks_files/prism.css" rel="stylesheet">
+    <script defer="" src="./afterHawks_files/all.js__"></script>
+    <script src="./afterHawks_files/prism.min.js.download"></script>
+    <script src="./afterHawks_files/prism-autoloader.min.js.download"></script>
 </head>
 <body>
-    <script></script>
-    <div x-data="{ darkMode: true, mobileMenu: false }" :class="{ 'dark': darkMode }" class="font-sans antialiased">
-    <h2>What is OFDM?</h2>
-    <p>OFDM stands for orthogonal frequency-division multiplexing which is a type 
-        of digital transmission and a method of encoding digital data on multiple carrier frequencies. 
-        Because of its ability to encode data on multiple carrier frequencies it has developed into a 
-        popular scheme for wideband digital communication. The uses for OFDM are in applications such as 
-        digital television and audio broadcasting, also DSL internet access, wireless networks, power line 
-        networks, and 4G/5G mobile communications.</p>
-    <p>	The main advantage of OFDM over single- carrier schemes is its ability to cope with severe 
-        channel conditions without having to deal with complex equalization filters. The reason OFDM 
-        doesn't need channel equalization is because OFDM is viewed as using many slow modulated narrowband 
-        signals rather than one rapidly modulated wideband signal like the single carrier schemes. This 
-        mechanism allows for transmitters  to send the same signal simultaneously at the same frequency which 
-        stops interference that would normally occur when using a single-carrier system.</p>
-    <h2>Types of satellite jamming and interference</h2>
-    <p>There are three types of interference: natural, man-made and electrical. Natural interference 
-        is mainly caused by harsh climate and special astronomical phenomena. Some examples of natural 
-        interference are rainstorms, billizards, and thunder; these cause physical damage to the ground 
-        station, though the climatic noise is the main cause of interference. Man-made interference refers 
-        to mistaken spatial layout and channel allocation. Electrical interference is covered below when 
-        talking about different types of jamming.
-    </p>
-    <p>There are two main types of satellite jamming. The first, uplink jamming, interferes with the signal 
-        going from a ground station or user terminal to the satellite. An RF signal of the same frequency as 
-        the targeted uplink signal is transmitted to the satellite, aiming to limit the satellite transponder 
-        from differentiating between the jamming signal and the actual signal. The second type, downlink jamming, 
-        disrupts transmissions sent from the satellite to ground-based or airborne receivers using RF signals that 
-        mimic the frequency of the downlink signal. It aims to inhibit ground users from receiving transmissions 
-        from the satellite and only needs to be as strong as the signal being received on the ground. Uplink jamming 
-        is considered more difficult because greater transmitter power is required to reach a given satellite’s 
-        transponders. It could be more impactful, however, due to its ability to degrade the satellite’s signal for all 
-        its users.6 Because downlink jammers must be within the field of view of the receiving terminal’s antenna, 
-        however, the effects of downlink jamming are more localized.
-    </p>
-    <h2>Why do we care?</h2>
-    <p>Satellite jamming can cause many issues from stopping the flow of information and data to affecting military 
-        efforts by delaying early warning systems. Jamming can disrupt missile warning systems, impede access to GPS, 
-        and decrease precision and persistence. This also means it could interrupt one’s ability to collect and transmit 
-        data, which would decrease the data’s accuracy and reliability. In war time this can be very dangerous because 
-        of how it can affect the allies power to effectively transmit data between the groups. In peace jamming can also 
-        be dangerous because of the fact that it can be used to stop everyday transmission of data and at the same time 
-        steal that information.</p>
-    <h2>Main Advantage</h2>
-    <p>Using OFDM as the main transmission system can already stop any attack that tries to attack by finding the correct 
-        frequency to disrupt the signal but since OFDM uses multiple lines with frequencies up into the millions, 
-        it would be nearly impossible for the attackers to interfere with the correct wavelengths.</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">What is OFDM?</h2>
+    
+        <p>OFDM stands for orthogonal frequency-division multiplexing which is a type 
+            of digital transmission and a method of encoding digital data on multiple carrier frequencies. 
+            Because of its ability to encode data on multiple carrier frequencies it has developed into a 
+            popular scheme for wideband digital communication. The uses for OFDM are in applications such as 
+            digital television and audio broadcasting, also DSL internet access, wireless networks, power line 
+            networks, and 4G/5G mobile communications.</p>
+        <p>	The main advantage of OFDM over single- carrier schemes is its ability to cope with severe 
+            channel conditions without having to deal with complex equalization filters. The reason OFDM 
+            doesn't need channel equalization is because OFDM is viewed as using many slow modulated narrowband 
+            signals rather than one rapidly modulated wideband signal like the single carrier schemes. This 
+            mechanism allows for transmitters  to send the same signal simultaneously at the same frequency which 
+            stops interference that would normally occur when using a single-carrier system.</p>
 
-</div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">Types of satellite jamming and interference</h2>
+            <p>There are three types of interference: natural, man-made and electrical. Natural interference 
+                is mainly caused by harsh climate and special astronomical phenomena. Some examples of natural 
+                interference are rainstorms, billizards, and thunder; these cause physical damage to the ground 
+                station, though the climatic noise is the main cause of interference. Man-made interference refers 
+                to mistaken spatial layout and channel allocation. Electrical interference is covered below when 
+                talking about different types of jamming.
+            </p>
+            <p>There are two main types of satellite jamming. The first, uplink jamming, interferes with the signal 
+                going from a ground station or user terminal to the satellite. An RF signal of the same frequency as 
+                the targeted uplink signal is transmitted to the satellite, aiming to limit the satellite transponder 
+                from differentiating between the jamming signal and the actual signal. The second type, downlink jamming, 
+                disrupts transmissions sent from the satellite to ground-based or airborne receivers using RF signals that 
+                mimic the frequency of the downlink signal. It aims to inhibit ground users from receiving transmissions 
+                from the satellite and only needs to be as strong as the signal being received on the ground. Uplink jamming 
+                is considered more difficult because greater transmitter power is required to reach a given satellite’s 
+                transponders. It could be more impactful, however, due to its ability to degrade the satellite’s signal for all 
+                its users.6 Because downlink jammers must be within the field of view of the receiving terminal’s antenna, 
+                however, the effects of downlink jamming are more localized.
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">Why do we care?</h2>
+            <p>Satellite jamming can cause many issues from stopping the flow of information and data to affecting military 
+                efforts by delaying early warning systems. Jamming can disrupt missile warning systems, impede access to GPS, 
+                and decrease precision and persistence. This also means it could interrupt one’s ability to collect and transmit 
+                data, which would decrease the data’s accuracy and reliability. In war time this can be very dangerous because 
+                of how it can affect the allies power to effectively transmit data between the groups. In peace jamming can also 
+                be dangerous because of the fact that it can be used to stop everyday transmission of data and at the same time 
+                steal that information.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">Main Advantage</h2>
+
+            <p>Using OFDM as the main transmission system can already stop any attack that tries to attack by finding the correct 
+                frequency to disrupt the signal but since OFDM uses multiple lines with frequencies up into the millions, 
+                it would be nearly impossible for the attackers to interfere with the correct wavelengths.</p>
+        </div>
+    </section>
 </body>
 </html>
