@@ -1,31 +1,54 @@
 <!doctype html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Preventing Satellite Jamming using OFDM</title> 
-    <link rel="stylesheet" href="./afterHawks_files/bulma.min.css">
+<head>
+    <style>
+        h1 {text-align: center;
+            padding-bottom:30px;}
+        p {text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14;
+            line-height: 1.8;
+            }
+        div {text-align: center;
+            flex-basis:auto;
+            padding-left:25%;
+            padding-right:25%;
+            padding-top:1%;
+        }
+        img{
+            align-content: center;
+            height: 500px;
+        }
+        .space{
+            background-image: url('nasa-yZygONrUBe8-unsplash.jpg');
+            height: 300px;
+        }
+        </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./afterHawks_files/prism.css" rel="stylesheet">
-    <script defer="" src="./afterHawks_files/all.js__"></script>
-    <script src="./afterHawks_files/prism.min.js.download"></script>
-    <script src="./afterHawks_files/prism-autoloader.min.js.download"></script>
+    <div class = "space">
+    <h1>Preventing Satellite Jamming using OFDM</h1> 
+    </div>
 </head>
 <body>
+   <!-- <img src="nasa-yZygONrUBe8-unsplash.jpg" alt="satellite"> --> 
     <section class="section">
         <div class="container">
             <h2 class="title is-4">What is OFDM?</h2>
     
-        <p>OFDM stands for orthogonal frequency-division multiplexing which is a type 
+        <p><span style="color:#000000;">OFDM stands for orthogonal frequency-division multiplexing which is a type 
             of digital transmission and a method of encoding digital data on multiple carrier frequencies. 
             Because of its ability to encode data on multiple carrier frequencies it has developed into a 
             popular scheme for wideband digital communication. The uses for OFDM are in applications such as 
             digital television and audio broadcasting, also DSL internet access, wireless networks, power line 
-            networks, and 4G/5G mobile communications.</p>
-        <p>	The main advantage of OFDM over single- carrier schemes is its ability to cope with severe 
+            networks, and 4G/5G mobile communications.</span></p>
+        <p><span style="color:#000000;">The main advantage of OFDM over single- carrier schemes is its ability to cope with severe 
             channel conditions without having to deal with complex equalization filters. The reason OFDM 
             doesn't need channel equalization is because OFDM is viewed as using many slow modulated narrowband 
             signals rather than one rapidly modulated wideband signal like the single carrier schemes. This 
             mechanism allows for transmitters  to send the same signal simultaneously at the same frequency which 
-            stops interference that would normally occur when using a single-carrier system.</p>
+            stops interference that would normally occur when using a single-carrier system.</span></p>
 
         </div>
     </section>
@@ -48,7 +71,7 @@
                 from the satellite and only needs to be as strong as the signal being received on the ground. Uplink jamming 
                 is considered more difficult because greater transmitter power is required to reach a given satellite’s 
                 transponders. It could be more impactful, however, due to its ability to degrade the satellite’s signal for all 
-                its users.6 Because downlink jammers must be within the field of view of the receiving terminal’s antenna, 
+                its users. Because downlink jammers must be within the field of view of the receiving terminal’s antenna, 
                 however, the effects of downlink jamming are more localized.
             </p>
         </div>
@@ -74,5 +97,34 @@
                 it would be nearly impossible for the attackers to interfere with the correct wavelengths.</p>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">Disadvantages</h2>
+            <p>Currently the one main disadvantage to OFDM is its requirement for high peak-to 
+                average power ratio. Also the synchronization error can destroy the orthogonality 
+                and cause interference. OFDM does not offer any advantages when it comes to natural 
+                interference so it would be the same as using a single carrier system.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-4">Sources</h2>
+            <p>A. Soliman, M., Atta, W., Moussa, K., Shaaban, S., & Rizk, M. (2018, July 18). Anti-jamming Randomized OFDM Band Hopping for Tactical Communications.</p>
+            <p>Jia, Z. (2018). Anti-jamming Technology in Small Satellite Communication. Journal of Physics: Conference Series, 960, 012013. https://doi.org/10.1088/1742-6596/960/1/012013</p>
+            <p>Sani, S. S., & Yaqub, A. (2018). MIMO-OFDM Energy Efficient Cognitive System with Intelligent Anti-jam Capability. Wireless Personal Communications, 98(2), 2291–2317. https://doi.org/10.1007/s11277-017-4975-8</p>
+            <p>Beidas, B. F., & Seshadri, R. I. (2017). OFDM-Like Signaling for Broadband Satellite Applications: Analysis and Advanced Compensation. IEEE Transactions on Communications, 65(10), 4433–4445. </p>
+            <p>Study of Enhanced Multicarrier (OFDM) Digital Transmission Techniques for Broadband Satellites | ESA’s ARTES Programmes. (n.d.). Retrieved March 21, 2021, from https://artes.esa.int/projects/study-enhanced-</p>
+            <p>https://unsplash.com/photos/yZygONrUBe8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink</p>
+        </div>
+    </section>
+
 </body>
+<footer>
+    <div class="footer">
+      <div class="container">
+        <div>
+          <p class="footer-sub"><strong>Contact Info</strong></p>
+            <p>georgerschmid@gmail.com</p>
+    </div>
+  </footer>
 </html>
